@@ -5,6 +5,7 @@ import "./MainBody.css";
 function MainBody() {
   return (
     <div className="mainbody">
+      {/* Dummy Data */}
       <CategoryCard
         categoryName="Toys"
         imgName="category__ornaments.jpg"
