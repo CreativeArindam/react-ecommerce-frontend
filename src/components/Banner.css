@@ -1,0 +1,74 @@
+.banner__image {
+  height: 60vh;
+  width: 100%;
+  /* background-image: url("../img/header2.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8438725832129726) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  animation: animatedBackground infinite 12s linear;
+}
+
+.banner__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(11, 20, 56);
+  background: linear-gradient(
+    112deg,
+    rgba(11, 20, 56, 0.4) 0%,
+    rgba(9, 9, 121, 0.4) 26%,
+    rgba(0, 212, 255, 0.4) 100%
+  );
+  z-index: -1;
+}
+.banner__container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.banner__companyName {
+  margin: 0;
+  font-family: "Lemon", cursive;
+  color: #fff;
+  font-size: 7rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.banner__tagLine {
+  color: #ea6d00;
+}
+
+@media screen and (max-width: 700px) {
+  .banner__image {
+    height: 40vh;
+  }
+  .banner__companyName {
+    font-size: 3.5rem;
+  }
+}
+
+@keyframes animatedBackground {
+  00%,
+  32% {
+    background-image: url("../img/header2.jpg");
+  }
+  33%,
+  66% {
+    background-image: url("../img/bg2.jpg");
+  }
+  67%,
+  100% {
+    background-image: url("../img/bg3.jpg");
+  }
+}
