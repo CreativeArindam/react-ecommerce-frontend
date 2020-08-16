@@ -1,0 +1,43 @@
+.athorization {
+  height: 100vh;
+  padding: 5rem 0;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 20, 56, 1) 0%,
+    rgba(9, 9, 121, 1) 26%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.athorization_form {
+  width: 30%;
+  margin: auto;
+  background: white;
+  box-shadow: 2px 2px 5px #000;
+  animation: drop 1s;
+}
+
+@media screen and (max-width: 700px) {
+  .athorization_form {
+    width: 95%;
+    background: white;
+    box-shadow: none;
+  }
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-3rem);
+  }
+  70% {
+    transform: translateY(0.2rem);
+  }
+  80% {
+    transform: translateY(-0.1rem);
+  }
+  90% {
+    transform: translateY(0.1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

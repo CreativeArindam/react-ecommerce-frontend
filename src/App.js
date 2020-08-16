@@ -3,7 +3,9 @@ import "./App.css";
 import Topnav from "./components/Topnav";
 import Banner from "./components/Banner";
 import MainBody from "./components/MainBody";
+import Authorization from "./components/Athorization";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import Athorization from "./components/Athorization";
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/login">
-            <h1>Login Page</h1>
+            <Athorization />
             <Link to="/">Back to Home</Link>
           </Route>
           <Route path="/cart">
