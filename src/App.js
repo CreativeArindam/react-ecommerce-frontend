@@ -3,7 +3,6 @@ import "./App.css";
 import Topnav from "./components/Topnav";
 import Banner from "./components/Banner";
 import MainBody from "./components/MainBody";
-import Authorization from "./components/Athorization";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Athorization from "./components/Athorization";
 
